@@ -1,0 +1,235 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ADD8E6"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:gravity="end"
+        android:textSize="32sp"
+        android:background="#EFEFEF"
+        android:padding="16dp"
+        android:text="0"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/display"
+        android:layout_margin="16dp"
+        android:columnCount="4"
+        android:orientation="horizontal">
+
+        <!-- Row 1 -->
+        <Button
+            android:id="@+id/btn7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:layout_gravity="fill"
+            android:background="#D3D3D3"
+            android:textSize="24sp"
+            android:padding="16dp"
+            android:text="7"/>
+
+        <Button
+            android:id="@+id/btn8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:layout_gravity="fill"
+            android:background="#D3D3D3"
+            android:textSize="24sp"
+            android:padding="16dp"
+            android:text="8"/>
+
+        <Button
+            android:id="@+id/btn9"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:layout_gravity="fill"
+            android:background="#D3D3D3"
+            android:textSize="24sp"
+            android:padding="16dp"
+            android:text="9"/>
+
+        <Button
+            android:id="@+id/btnDivide"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:layout_gravity="fill"
+            android:background="#D3D3D3"
+            android:textSize="24sp"
+            android:padding="16dp"
+            android:text="/"/>
+
+        <!-- Row 2 -->
+        <Button
+            android:id="@+id/btn4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:layout_gravity="fill"
+            android:background="#D3D3D3"
+            android:textSize="24sp"
+            android:padding="16dp"
+            android:text="4"/>
+
+        <Button
+            android:id="@+id/btn5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:layout_gravity="fill"
+            android:background="#D3D3D3"
+            android:textSize="24sp"
+            android:padding="16dp"
+            android:text="5"/>
+
+        <Button
+            android:id="@+id/btn6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:layout_gravity="fill"
+            android:background="#D3D3D3"
+            android:textSize="24sp"
+            android:padding="16dp"
+            android:text="6"/>
+
+        <Button
+            android:id="@+id/btnMultiply"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:layout_gravity="fill"
+            android:background="#D3D3D3"
+            android:textSize="24sp"
+            android:padding="16dp"
+            android:text="*"/>
+
+        <!-- Row 3 -->
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:layout_gravity="fill"
+            android:background="#D3D3D3"
+            android:textSize="24sp"
+            android:padding="16dp"
+            android:text="1"/>
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:layout_gravity="fill"
+            android:background="#D3D3D3"
+            android:textSize="24sp"
+            android:padding="16dp"
+            android:text="2"/>
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:layout_gravity="fill"
+            android:background="#D3D3D3"
+            android:textSize="24sp"
+            android:padding="16dp"
+            android:text="3"/>
+
+        <Button
+            android:id="@+id/btnSubtract"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:layout_gravity="fill"
+            android:background="#D3D3D3"
+            android:textSize="24sp"
+            android:padding="16dp"
+            android:text="-"/>
+
+        <!-- Row 4 -->
+        <Button
+            android:id="@+id/btn0"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:layout_gravity="fill"
+            android:background="#D3D3D3"
+            android:textSize="24sp"
+            android:padding="16dp"
+            android:text="0"/>
+
+        <Button
+            android:id="@+id/btnClear"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:layout_gravity="fill"
+            android:background="#D3D3D3"
+            android:textSize="24sp"
+            android:padding="16dp"
+            android:text="C"/>
+
+        <Button
+            android:id="@+id/btnEquals"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:layout_gravity="fill"
+            android:background="#D3D3D3"
+            android:textSize="24sp"
+            android:padding="16dp"
+            android:text="="/>
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:layout_gravity="fill"
+            android:background="#D3D3D3"
+            android:textSize="24sp"
+            android:padding="16dp"
+            android:text="+"/>
+    </GridLayout>
+
+    <!-- Button to open SecondActivity -->
+    <Button
+        android:id="@+id/btnOpenSecondActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="12dp"
+        android:background="#D3D3D3"
+        android:textSize="24sp"
+        android:padding="16dp"
+        android:text="to next app"/>
+</RelativeLayout>
